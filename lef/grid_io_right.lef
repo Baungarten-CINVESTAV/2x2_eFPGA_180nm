@@ -1,0 +1,228 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO grid_io_right
+  CLASS BLOCK ;
+  FOREIGN grid_io_right ;
+  ORIGIN 0.000 0.000 ;
+  SIZE 80.000 BY 80.000 ;
+  PIN ccff_head
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 43.680 4.000 44.240 ;
+    END
+  END ccff_head
+  PIN ccff_tail
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.986000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 76.000 47.040 80.000 47.600 ;
+    END
+  END ccff_tail
+  PIN gfpga_pad_GPIO_PAD[0]
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 2.080400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 76.000 36.960 80.000 37.520 ;
+    END
+  END gfpga_pad_GPIO_PAD[0]
+  PIN gfpga_pad_GPIO_PAD[1]
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 2.080400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 43.680 0.000 44.240 4.000 ;
+    END
+  END gfpga_pad_GPIO_PAD[1]
+  PIN gfpga_pad_GPIO_PAD[2]
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 2.080400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 36.960 4.000 37.520 ;
+    END
+  END gfpga_pad_GPIO_PAD[2]
+  PIN gfpga_pad_GPIO_PAD[3]
+    DIRECTION INOUT ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 2.080400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 26.880 0.000 27.440 4.000 ;
+    END
+  END gfpga_pad_GPIO_PAD[3]
+  PIN left_width_0_height_0_subtile_0__pin_inpad_0_
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 1.986000 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 76.000 33.600 80.000 34.160 ;
+    END
+  END left_width_0_height_0_subtile_0__pin_inpad_0_
+  PIN left_width_0_height_0_subtile_0__pin_outpad_0_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 76.000 30.240 80.000 30.800 ;
+    END
+  END left_width_0_height_0_subtile_0__pin_outpad_0_
+  PIN left_width_0_height_0_subtile_1__pin_inpad_0_
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 2.080400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 40.320 0.000 40.880 4.000 ;
+    END
+  END left_width_0_height_0_subtile_1__pin_inpad_0_
+  PIN left_width_0_height_0_subtile_1__pin_outpad_0_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 36.960 0.000 37.520 4.000 ;
+    END
+  END left_width_0_height_0_subtile_1__pin_outpad_0_
+  PIN left_width_0_height_0_subtile_2__pin_inpad_0_
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 2.080400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 33.600 4.000 34.160 ;
+    END
+  END left_width_0_height_0_subtile_2__pin_inpad_0_
+  PIN left_width_0_height_0_subtile_2__pin_outpad_0_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 30.240 4.000 30.800 ;
+    END
+  END left_width_0_height_0_subtile_2__pin_outpad_0_
+  PIN left_width_0_height_0_subtile_3__pin_inpad_0_
+    DIRECTION OUTPUT TRISTATE ;
+    USE SIGNAL ;
+    ANTENNADIFFAREA 2.080400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 33.600 0.000 34.160 4.000 ;
+    END
+  END left_width_0_height_0_subtile_3__pin_inpad_0_
+  PIN left_width_0_height_0_subtile_3__pin_outpad_0_
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.741000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal2 ;
+        RECT 30.240 0.000 30.800 4.000 ;
+    END
+  END left_width_0_height_0_subtile_3__pin_outpad_0_
+  PIN pReset
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 0.726000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 76.000 43.680 80.000 44.240 ;
+    END
+  END pReset
+  PIN prog_clk
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    ANTENNAGATEAREA 4.738000 ;
+    ANTENNADIFFAREA 0.410400 ;
+    PORT
+      LAYER Metal3 ;
+        RECT 0.000 47.040 4.000 47.600 ;
+    END
+  END prog_clk
+  PIN vdd
+    DIRECTION INOUT ;
+    USE POWER ;
+    PORT
+      LAYER Metal4 ;
+        RECT 14.180 15.380 15.780 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 30.700 15.380 32.300 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 47.220 15.380 48.820 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 63.740 15.380 65.340 63.020 ;
+    END
+  END vdd
+  PIN vss
+    DIRECTION INOUT ;
+    USE GROUND ;
+    PORT
+      LAYER Metal4 ;
+        RECT 22.440 15.380 24.040 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 38.960 15.380 40.560 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 55.480 15.380 57.080 63.020 ;
+    END
+    PORT
+      LAYER Metal4 ;
+        RECT 72.000 15.380 73.600 63.020 ;
+    END
+  END vss
+  OBS
+      LAYER Metal1 ;
+        RECT 6.720 15.380 73.600 63.020 ;
+      LAYER Metal2 ;
+        RECT 8.540 4.300 73.460 62.910 ;
+        RECT 8.540 4.000 26.580 4.300 ;
+        RECT 27.740 4.000 29.940 4.300 ;
+        RECT 31.100 4.000 33.300 4.300 ;
+        RECT 34.460 4.000 36.660 4.300 ;
+        RECT 37.820 4.000 40.020 4.300 ;
+        RECT 41.180 4.000 43.380 4.300 ;
+        RECT 44.540 4.000 73.460 4.300 ;
+      LAYER Metal3 ;
+        RECT 4.000 47.900 76.580 62.860 ;
+        RECT 4.300 46.740 75.700 47.900 ;
+        RECT 4.000 44.540 76.580 46.740 ;
+        RECT 4.300 43.380 75.700 44.540 ;
+        RECT 4.000 37.820 76.580 43.380 ;
+        RECT 4.300 36.660 75.700 37.820 ;
+        RECT 4.000 34.460 76.580 36.660 ;
+        RECT 4.300 33.300 75.700 34.460 ;
+        RECT 4.000 31.100 76.580 33.300 ;
+        RECT 4.300 29.940 75.700 31.100 ;
+        RECT 4.000 15.540 76.580 29.940 ;
+  END
+END grid_io_right
+END LIBRARY
+

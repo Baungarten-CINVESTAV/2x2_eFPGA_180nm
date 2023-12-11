@@ -1,30 +1,48 @@
 {
-	"TOP_SOURCE": "user_project_wrapper",
-	"TOP_LAYOUT": "$TOP_SOURCE",
-	"EXTRACT_FLATGLOB": [
-		""
-	],
-	"EXTRACT_ABSTRACT": [
-		"*__fill_*",
-		"*__fakediode_*",
-		"*__tapvpwrvgnd_*"
-	],
-	"LVS_FLATTEN": [
-		""
-	],
-	"LVS_NOFLATTEN": [
-		""
-	],
-	"LVS_IGNORE": [
-		""
-	],
-	"LVS_SPICE_FILES": [
-		"$PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice/sky130_ef_sc_hd__decap_12.spice",
-		"$PDK_ROOT/$PDK/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice"
-	],
-	"LVS_VERILOG_FILES": [
-		"$UPRJ_ROOT/verilog/gl/user_proj_example.v",
-		"$UPRJ_ROOT/verilog/gl/$TOP_SOURCE.v"
-	],
-	"LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds"
+    "TOP_SOURCE": "user_project_wrapper",
+    "TOP_LAYOUT": "$TOP_SOURCE",
+    "EXTRACT_FLATGLOB": [
+        ""
+    ],
+    "EXTRACT_ABSTRACT": [
+        "*__fill_*",
+        "*__fakediode_*",
+        "*__tapvpwrvgnd_*"
+    ],
+    "LVS_FLATTEN": [
+        ""
+    ],
+    "LVS_NOFLATTEN": [
+        ""
+    ],
+    "LVS_IGNORE": [
+        ""
+    ],
+    "LVS_SPICE_FILES": [
+        "$PDK_ROOT/$PDK/libs.ref/gf180mcu_fd_sc_mcu7t5v0/spice/gf180mcu_fd_sc_mcu7t5v0.spice"
+    ],
+    "LVS_VERILOG_FILES": [
+	"$UPRJ_ROOT/verilog/gl/cbx_1__0_.v", 
+	"$UPRJ_ROOT/verilog/gl/cbx_1__1_.v",     
+	"$UPRJ_ROOT/verilog/gl/cbx_1__2_.v",       
+	"$UPRJ_ROOT/verilog/gl/cby_0__1_.v", 
+	"$UPRJ_ROOT/verilog/gl/cby_1__1_.v",
+	"$UPRJ_ROOT/verilog/gl/cby_2__1_.v", 
+	"$UPRJ_ROOT/verilog/gl/grid_clb.v", 
+	"$UPRJ_ROOT/verilog/gl/grid_io_bottom.v", 
+	"$UPRJ_ROOT/verilog/gl/grid_io_left.v", 
+	"$UPRJ_ROOT/verilog/gl/grid_io_right.v",   
+	"$UPRJ_ROOT/verilog/gl/grid_io_top.v",
+	"$UPRJ_ROOT/verilog/gl/sb_0__0_.v", 
+	"$UPRJ_ROOT/verilog/gl/sb_0__1_.v",    
+	"$UPRJ_ROOT/verilog/gl/sb_0__2_.v",
+	"$UPRJ_ROOT/verilog/gl/sb_1__0_.v", 
+	"$UPRJ_ROOT/verilog/gl/sb_1__1_.v",       
+	"$UPRJ_ROOT/verilog/gl/sb_1__2_.v",
+	"$UPRJ_ROOT/verilog/gl/sb_2__0_.v", 
+	"$UPRJ_ROOT/verilog/gl/sb_2__1_.v",       
+	"$UPRJ_ROOT/verilog/gl/sb_2__2_.v",
+        "$UPRJ_ROOT/verilog/gl/$TOP_SOURCE.v"
+    ],
+    "LAYOUT_FILE": "$UPRJ_ROOT/gds/$TOP_LAYOUT.gds"
 }

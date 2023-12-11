@@ -1,0 +1,996 @@
+*SPEF "ieee 1481-1999"
+*DESIGN "grid_io_right"
+*DATE "11:11:11 Fri 11 11, 1111"
+*VENDOR "OpenRCX"
+*PROGRAM "Parallel Extraction"
+*VERSION "1.0"
+*DESIGN_FLOW "NAME_SCOPE LOCAL" "PIN_CAP NONE"
+*DIVIDER /
+*DELIMITER :
+*BUS_DELIMITER []
+*T_UNIT 1 NS
+*C_UNIT 1 PF
+*R_UNIT 1 OHM
+*L_UNIT 1 HENRY
+
+*NAME_MAP
+*1 ccff_head
+*2 ccff_tail
+*3 gfpga_pad_GPIO_PAD[0]
+*4 gfpga_pad_GPIO_PAD[1]
+*5 gfpga_pad_GPIO_PAD[2]
+*6 gfpga_pad_GPIO_PAD[3]
+*7 left_width_0_height_0_subtile_0__pin_inpad_0_
+*8 left_width_0_height_0_subtile_0__pin_outpad_0_
+*9 left_width_0_height_0_subtile_1__pin_inpad_0_
+*10 left_width_0_height_0_subtile_1__pin_outpad_0_
+*11 left_width_0_height_0_subtile_2__pin_inpad_0_
+*12 left_width_0_height_0_subtile_2__pin_outpad_0_
+*13 left_width_0_height_0_subtile_3__pin_inpad_0_
+*14 left_width_0_height_0_subtile_3__pin_outpad_0_
+*15 pReset
+*16 prog_clk
+*19 _00_
+*20 _01_
+*21 _02_
+*22 _03_
+*23 clknet_0_prog_clk
+*24 clknet_1_0__leaf_prog_clk
+*25 clknet_1_1__leaf_prog_clk
+*26 logical_tile_io_mode_io__0\.ccff_tail
+*27 logical_tile_io_mode_io__1\.ccff_tail
+*28 logical_tile_io_mode_io__2\.ccff_tail
+*29 net1
+*30 net10
+*31 net11
+*32 net12
+*33 net13
+*34 net14
+*35 net2
+*36 net3
+*37 net4
+*38 net5
+*39 net6
+*40 net7
+*41 net8
+*42 net9
+*43 ANTENNA_clkbuf_0_prog_clk_I
+*44 ANTENNA_input1_I
+*45 ANTENNA_input2_I
+*46 ANTENNA_input3_I
+*47 ANTENNA_input4_I
+*48 ANTENNA_input5_I
+*49 ANTENNA_input6_I
+*50 FILLER_0_0_100
+*51 FILLER_0_0_104
+*52 FILLER_0_0_112
+*53 FILLER_0_0_2
+*54 FILLER_0_0_36
+*55 FILLER_0_0_40
+*56 FILLER_0_0_59
+*57 FILLER_0_0_67
+*58 FILLER_0_0_80
+*59 FILLER_0_0_96
+*60 FILLER_0_10_103
+*61 FILLER_0_10_107
+*62 FILLER_0_10_115
+*63 FILLER_0_10_2
+*64 FILLER_0_10_34
+*65 FILLER_0_10_37
+*66 FILLER_0_10_45
+*67 FILLER_0_10_83
+*68 FILLER_0_10_99
+*69 FILLER_0_11_104
+*70 FILLER_0_11_112
+*71 FILLER_0_11_2
+*72 FILLER_0_11_36
+*73 FILLER_0_11_70
+*74 FILLER_0_1_104
+*75 FILLER_0_1_112
+*76 FILLER_0_1_2
+*77 FILLER_0_1_34
+*78 FILLER_0_1_50
+*79 FILLER_0_1_52
+*80 FILLER_0_1_61
+*81 FILLER_0_1_69
+*82 FILLER_0_1_72
+*83 FILLER_0_2_102
+*84 FILLER_0_2_104
+*85 FILLER_0_2_107
+*86 FILLER_0_2_115
+*87 FILLER_0_2_2
+*88 FILLER_0_2_34
+*89 FILLER_0_2_53
+*90 FILLER_0_2_69
+*91 FILLER_0_2_71
+*92 FILLER_0_2_78
+*93 FILLER_0_2_94
+*94 FILLER_0_3_12
+*95 FILLER_0_3_20
+*96 FILLER_0_3_64
+*97 FILLER_0_3_68
+*98 FILLER_0_3_8
+*99 FILLER_0_3_82
+*100 FILLER_0_4_102
+*101 FILLER_0_4_104
+*102 FILLER_0_4_107
+*103 FILLER_0_4_109
+*104 FILLER_0_4_16
+*105 FILLER_0_4_2
+*106 FILLER_0_4_24
+*107 FILLER_0_4_28
+*108 FILLER_0_4_37
+*109 FILLER_0_4_39
+*110 FILLER_0_4_94
+*111 FILLER_0_5_10
+*112 FILLER_0_5_101
+*113 FILLER_0_5_14
+*114 FILLER_0_5_2
+*115 FILLER_0_5_65
+*116 FILLER_0_5_69
+*117 FILLER_0_5_72
+*118 FILLER_0_5_80
+*119 FILLER_0_5_97
+*120 FILLER_0_6_100
+*121 FILLER_0_6_102
+*122 FILLER_0_6_107
+*123 FILLER_0_6_18
+*124 FILLER_0_6_2
+*125 FILLER_0_6_26
+*126 FILLER_0_6_30
+*127 FILLER_0_6_32
+*128 FILLER_0_6_37
+*129 FILLER_0_7_101
+*130 FILLER_0_7_12
+*131 FILLER_0_7_28
+*132 FILLER_0_7_30
+*133 FILLER_0_7_65
+*134 FILLER_0_7_69
+*135 FILLER_0_7_72
+*136 FILLER_0_7_8
+*137 FILLER_0_7_80
+*138 FILLER_0_7_82
+*139 FILLER_0_7_99
+*140 FILLER_0_8_107
+*141 FILLER_0_8_115
+*142 FILLER_0_8_2
+*143 FILLER_0_8_34
+*144 FILLER_0_8_37
+*145 FILLER_0_8_45
+*146 FILLER_0_8_47
+*147 FILLER_0_8_54
+*148 FILLER_0_9_104
+*149 FILLER_0_9_112
+*150 FILLER_0_9_2
+*151 FILLER_0_9_34
+*152 FILLER_0_9_50
+*153 FILLER_0_9_58
+*154 FILLER_0_9_62
+*155 FILLER_0_9_88
+*156 PHY_EDGE_ROW_0_Left_12
+*157 PHY_EDGE_ROW_0_Right_0
+*158 PHY_EDGE_ROW_10_Left_22
+*159 PHY_EDGE_ROW_10_Right_10
+*160 PHY_EDGE_ROW_11_Left_23
+*161 PHY_EDGE_ROW_11_Right_11
+*162 PHY_EDGE_ROW_1_Left_13
+*163 PHY_EDGE_ROW_1_Right_1
+*164 PHY_EDGE_ROW_2_Left_14
+*165 PHY_EDGE_ROW_2_Right_2
+*166 PHY_EDGE_ROW_3_Left_15
+*167 PHY_EDGE_ROW_3_Right_3
+*168 PHY_EDGE_ROW_4_Left_16
+*169 PHY_EDGE_ROW_4_Right_4
+*170 PHY_EDGE_ROW_5_Left_17
+*171 PHY_EDGE_ROW_5_Right_5
+*172 PHY_EDGE_ROW_6_Left_18
+*173 PHY_EDGE_ROW_6_Right_6
+*174 PHY_EDGE_ROW_7_Left_19
+*175 PHY_EDGE_ROW_7_Right_7
+*176 PHY_EDGE_ROW_8_Left_20
+*177 PHY_EDGE_ROW_8_Right_8
+*178 PHY_EDGE_ROW_9_Left_21
+*179 PHY_EDGE_ROW_9_Right_9
+*180 TAP_TAPCELL_ROW_0_24
+*181 TAP_TAPCELL_ROW_0_25
+*182 TAP_TAPCELL_ROW_0_26
+*183 TAP_TAPCELL_ROW_10_40
+*184 TAP_TAPCELL_ROW_10_41
+*185 TAP_TAPCELL_ROW_11_42
+*186 TAP_TAPCELL_ROW_11_43
+*187 TAP_TAPCELL_ROW_11_44
+*188 TAP_TAPCELL_ROW_1_27
+*189 TAP_TAPCELL_ROW_2_28
+*190 TAP_TAPCELL_ROW_2_29
+*191 TAP_TAPCELL_ROW_3_30
+*192 TAP_TAPCELL_ROW_4_31
+*193 TAP_TAPCELL_ROW_4_32
+*194 TAP_TAPCELL_ROW_5_33
+*195 TAP_TAPCELL_ROW_6_34
+*196 TAP_TAPCELL_ROW_6_35
+*197 TAP_TAPCELL_ROW_7_36
+*198 TAP_TAPCELL_ROW_8_37
+*199 TAP_TAPCELL_ROW_8_38
+*200 TAP_TAPCELL_ROW_9_39
+*201 _04_
+*202 _05_
+*203 _06_
+*204 _07_
+*205 _08_
+*206 _09_
+*207 _10_
+*208 _11_
+*209 _12_
+*210 _13_
+*211 _14_
+*212 _15_
+*213 _16_
+*214 _17_
+*215 _18_
+*216 _19_
+*217 clkbuf_0_prog_clk
+*218 clkbuf_1_0__f_prog_clk
+*219 clkbuf_1_1__f_prog_clk
+*220 hold1
+*221 hold2
+*222 hold3
+*223 input1
+*224 input2
+*225 input3
+*226 input4
+*227 input5
+*228 input6
+*229 output10
+*230 output11
+*231 output7
+*232 output8
+*233 output9
+
+*PORTS
+ccff_head I
+ccff_tail O
+gfpga_pad_GPIO_PAD[0] I
+gfpga_pad_GPIO_PAD[1] I
+gfpga_pad_GPIO_PAD[2] I
+gfpga_pad_GPIO_PAD[3] I
+left_width_0_height_0_subtile_0__pin_inpad_0_ O
+left_width_0_height_0_subtile_0__pin_outpad_0_ I
+left_width_0_height_0_subtile_1__pin_inpad_0_ O
+left_width_0_height_0_subtile_1__pin_outpad_0_ I
+left_width_0_height_0_subtile_2__pin_inpad_0_ O
+left_width_0_height_0_subtile_2__pin_outpad_0_ I
+left_width_0_height_0_subtile_3__pin_inpad_0_ O
+left_width_0_height_0_subtile_3__pin_outpad_0_ I
+pReset I
+prog_clk I
+
+*D_NET *1 0.00108417
+*CONN
+*P ccff_head I
+*I *44:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *223:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 ccff_head 0.00018747
+2 *44:I 0.000227016
+3 *223:I 5.19339e-05
+4 *1:5 0.000466419
+5 *44:I *205:D 1.56862e-05
+6 *44:I *16:17 3.67913e-05
+7 *223:I *205:D 4.45837e-05
+8 *1:5 *16:17 5.42682e-05
+*RES
+1 ccff_head *1:5 1.665 
+2 *1:5 *223:I 9.45 
+3 *1:5 *44:I 10.62 
+*END
+
+*D_NET *2 0.000872526
+*CONN
+*P ccff_tail O
+*I *231:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_3
+*CAP
+1 ccff_tail 0.000429315
+2 *231:Z 0.000429315
+3 ccff_tail *49:I 0
+4 ccff_tail *15:13 1.38963e-05
+*RES
+1 *231:Z ccff_tail 11.835 
+*END
+
+*D_NET *3 0.00452787
+*CONN
+*P gfpga_pad_GPIO_PAD[0] I
+*I *212:Z O *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*CAP
+1 gfpga_pad_GPIO_PAD[0] 0.00109049
+2 *212:Z 0.00109049
+3 gfpga_pad_GPIO_PAD[0] left_width_0_height_0_subtile_0__pin_inpad_0_ 4.88478e-05
+4 gfpga_pad_GPIO_PAD[0] *49:I 0
+5 gfpga_pad_GPIO_PAD[0] *206:D 1.0415e-05
+6 gfpga_pad_GPIO_PAD[0] *208:RN 0.000491839
+7 gfpga_pad_GPIO_PAD[0] *232:I 0.00179579
+8 gfpga_pad_GPIO_PAD[0] *15:13 0
+9 gfpga_pad_GPIO_PAD[0] *35:12 0
+10 gfpga_pad_GPIO_PAD[0] *39:8 0
+*RES
+1 *212:Z gfpga_pad_GPIO_PAD[0] 19.395 
+*END
+
+*D_NET *4 0.00441927
+*CONN
+*P gfpga_pad_GPIO_PAD[1] I
+*I *211:Z O *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*CAP
+1 gfpga_pad_GPIO_PAD[1] 0.00146016
+2 *211:Z 0.00146016
+3 gfpga_pad_GPIO_PAD[1] left_width_0_height_0_subtile_1__pin_inpad_0_ 0.00042094
+4 gfpga_pad_GPIO_PAD[1] left_width_0_height_0_subtile_3__pin_inpad_0_ 0.000119878
+5 gfpga_pad_GPIO_PAD[1] *205:RN 9.55009e-05
+6 gfpga_pad_GPIO_PAD[1] *209:I 0.000123069
+7 gfpga_pad_GPIO_PAD[1] *211:I 0
+8 gfpga_pad_GPIO_PAD[1] *225:I 1.51153e-05
+9 gfpga_pad_GPIO_PAD[1] *230:I 0.000642587
+10 gfpga_pad_GPIO_PAD[1] *233:I 2.70442e-05
+11 gfpga_pad_GPIO_PAD[1] *10:9 3.68874e-05
+12 gfpga_pad_GPIO_PAD[1] *36:8 0
+13 gfpga_pad_GPIO_PAD[1] *38:8 1.79237e-05
+*RES
+1 *211:Z gfpga_pad_GPIO_PAD[1] 25.695 
+*END
+
+*D_NET *5 0.00417165
+*CONN
+*P gfpga_pad_GPIO_PAD[2] I
+*I *210:Z O *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*CAP
+1 gfpga_pad_GPIO_PAD[2] 0.00155703
+2 *210:Z 0.00155703
+3 gfpga_pad_GPIO_PAD[2] gfpga_pad_GPIO_PAD[3] 2.30981e-05
+4 gfpga_pad_GPIO_PAD[2] left_width_0_height_0_subtile_2__pin_inpad_0_ 7.25695e-05
+5 gfpga_pad_GPIO_PAD[2] *205:D 0.000568811
+6 gfpga_pad_GPIO_PAD[2] *205:CLK 0.000390026
+7 gfpga_pad_GPIO_PAD[2] *209:I 3.09818e-06
+8 gfpga_pad_GPIO_PAD[2] *229:I 0
+*RES
+1 *210:Z gfpga_pad_GPIO_PAD[2] 30.555 
+*END
+
+*D_NET *6 0.00361072
+*CONN
+*P gfpga_pad_GPIO_PAD[3] I
+*I *209:Z O *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*CAP
+1 gfpga_pad_GPIO_PAD[3] 0.00113529
+2 *209:Z 0.00113529
+3 gfpga_pad_GPIO_PAD[3] *209:I 0
+4 gfpga_pad_GPIO_PAD[3] *210:I 0.000842798
+5 gfpga_pad_GPIO_PAD[3] *14:5 0.000474244
+6 gfpga_pad_GPIO_PAD[3] *38:8 0
+7 gfpga_pad_GPIO_PAD[2] gfpga_pad_GPIO_PAD[3] 2.30981e-05
+*RES
+1 *209:Z gfpga_pad_GPIO_PAD[3] 14.895 
+*END
+
+*D_NET *7 0.000992556
+*CONN
+*P left_width_0_height_0_subtile_0__pin_inpad_0_ O
+*I *232:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_3
+*CAP
+1 left_width_0_height_0_subtile_0__pin_inpad_0_ 0.000452177
+2 *232:Z 0.000452177
+3 left_width_0_height_0_subtile_0__pin_inpad_0_ *8:7 3.93531e-05
+4 gfpga_pad_GPIO_PAD[0] left_width_0_height_0_subtile_0__pin_inpad_0_ 4.88478e-05
+*RES
+1 *232:Z left_width_0_height_0_subtile_0__pin_inpad_0_ 12.015 
+*END
+
+*D_NET *8 0.000892483
+*CONN
+*P left_width_0_height_0_subtile_0__pin_outpad_0_ I
+*I *45:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *224:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 left_width_0_height_0_subtile_0__pin_outpad_0_ 0.000256916
+2 *45:I 0
+3 *224:I 0.000169649
+4 *8:7 0.000426565
+5 left_width_0_height_0_subtile_0__pin_inpad_0_ *8:7 3.93531e-05
+*RES
+1 left_width_0_height_0_subtile_0__pin_outpad_0_ *8:7 6.165 
+2 *8:7 *224:I 5.58 
+3 *8:7 *45:I 4.5 
+*END
+
+*D_NET *9 0.00279523
+*CONN
+*P left_width_0_height_0_subtile_1__pin_inpad_0_ O
+*I *233:Z O *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*CAP
+1 left_width_0_height_0_subtile_1__pin_inpad_0_ 0.000750551
+2 *233:Z 0.000750551
+3 left_width_0_height_0_subtile_1__pin_inpad_0_ *233:I 0.000772904
+4 left_width_0_height_0_subtile_1__pin_inpad_0_ *10:9 0.00010028
+5 gfpga_pad_GPIO_PAD[1] left_width_0_height_0_subtile_1__pin_inpad_0_ 0.00042094
+*RES
+1 *233:Z left_width_0_height_0_subtile_1__pin_inpad_0_ 21.195 
+*END
+
+*D_NET *10 0.00191268
+*CONN
+*P left_width_0_height_0_subtile_1__pin_outpad_0_ I
+*I *225:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*I *46:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 left_width_0_height_0_subtile_1__pin_outpad_0_ 0.000726265
+2 *225:I 1.89068e-05
+3 *46:I 5.74829e-05
+4 *10:9 0.000802655
+5 *225:I *233:I 7.96333e-06
+6 *10:9 left_width_0_height_0_subtile_3__pin_inpad_0_ 0.000102196
+7 *10:9 *230:I 2.6155e-05
+8 *10:9 *233:I 1.8772e-05
+9 gfpga_pad_GPIO_PAD[1] *225:I 1.51153e-05
+10 gfpga_pad_GPIO_PAD[1] *10:9 3.68874e-05
+11 left_width_0_height_0_subtile_1__pin_inpad_0_ *10:9 0.00010028
+*RES
+1 left_width_0_height_0_subtile_1__pin_outpad_0_ *10:9 6.165 
+2 *10:9 *46:I 4.95 
+3 *10:9 *225:I 4.77 
+*END
+
+*D_NET *11 0.000653996
+*CONN
+*P left_width_0_height_0_subtile_2__pin_inpad_0_ O
+*I *229:Z O *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*CAP
+1 left_width_0_height_0_subtile_2__pin_inpad_0_ 0.000221841
+2 *229:Z 0.000221841
+3 left_width_0_height_0_subtile_2__pin_inpad_0_ *47:I 1.47172e-05
+4 left_width_0_height_0_subtile_2__pin_inpad_0_ *205:D 2.52908e-05
+5 left_width_0_height_0_subtile_2__pin_inpad_0_ *12:5 5.42682e-05
+6 left_width_0_height_0_subtile_2__pin_inpad_0_ *37:10 4.34691e-05
+7 gfpga_pad_GPIO_PAD[2] left_width_0_height_0_subtile_2__pin_inpad_0_ 7.25695e-05
+*RES
+1 *229:Z left_width_0_height_0_subtile_2__pin_inpad_0_ 11.385 
+*END
+
+*D_NET *12 0.000919012
+*CONN
+*P left_width_0_height_0_subtile_2__pin_outpad_0_ I
+*I *47:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *226:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 left_width_0_height_0_subtile_2__pin_outpad_0_ 0.00018747
+2 *47:I 0.000156026
+3 *226:I 4.43131e-05
+4 *12:5 0.000387809
+5 *47:I *37:10 6.97472e-05
+6 *226:I *37:10 4.6613e-06
+7 left_width_0_height_0_subtile_2__pin_inpad_0_ *47:I 1.47172e-05
+8 left_width_0_height_0_subtile_2__pin_inpad_0_ *12:5 5.42682e-05
+*RES
+1 left_width_0_height_0_subtile_2__pin_outpad_0_ *12:5 1.665 
+2 *12:5 *226:I 9.27 
+3 *12:5 *47:I 10.35 
+*END
+
+*D_NET *13 0.00187697
+*CONN
+*P left_width_0_height_0_subtile_3__pin_inpad_0_ O
+*I *230:Z O *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*CAP
+1 left_width_0_height_0_subtile_3__pin_inpad_0_ 0.000665271
+2 *230:Z 0.000665271
+3 left_width_0_height_0_subtile_3__pin_inpad_0_ *230:I 3.22122e-05
+4 left_width_0_height_0_subtile_3__pin_inpad_0_ *14:5 0.000114579
+5 left_width_0_height_0_subtile_3__pin_inpad_0_ *38:8 0.000177559
+6 gfpga_pad_GPIO_PAD[1] left_width_0_height_0_subtile_3__pin_inpad_0_ 0.000119878
+7 *10:9 left_width_0_height_0_subtile_3__pin_inpad_0_ 0.000102196
+*RES
+1 *230:Z left_width_0_height_0_subtile_3__pin_inpad_0_ 19.665 
+*END
+
+*D_NET *14 0.00145742
+*CONN
+*P left_width_0_height_0_subtile_3__pin_outpad_0_ I
+*I *227:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*I *48:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 left_width_0_height_0_subtile_3__pin_outpad_0_ 0.000359506
+2 *227:I 7.30695e-05
+3 *48:I 0
+4 *14:5 0.000432575
+5 *14:5 *38:8 3.44834e-06
+6 gfpga_pad_GPIO_PAD[3] *14:5 0.000474244
+7 left_width_0_height_0_subtile_3__pin_inpad_0_ *14:5 0.000114579
+*RES
+1 left_width_0_height_0_subtile_3__pin_outpad_0_ *14:5 4.365 
+2 *14:5 *48:I 4.5 
+3 *14:5 *227:I 4.95 
+*END
+
+*D_NET *15 0.00164622
+*CONN
+*P pReset I
+*I *228:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+*I *49:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*CAP
+1 pReset 0.000390528
+2 *228:I 4.64589e-05
+3 *49:I 0.000183084
+4 *15:13 0.00062007
+5 *49:I *39:8 0.000392186
+6 ccff_tail *49:I 0
+7 ccff_tail *15:13 1.38963e-05
+8 gfpga_pad_GPIO_PAD[0] *49:I 0
+9 gfpga_pad_GPIO_PAD[0] *15:13 0
+*RES
+1 pReset *15:13 3.645 
+2 *15:13 *49:I 10.89 
+3 *15:13 *228:I 9.27 
+*END
+
+*D_NET *16 0.00393383
+*CONN
+*P prog_clk I
+*I *43:I I *D gf180mcu_fd_sc_mcu7t5v0__antenna
+*I *217:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+*CAP
+1 prog_clk 0.00128796
+2 *43:I 0
+3 *217:I 0.00026262
+4 *16:17 0.00155058
+5 *217:I *206:D 0.000234632
+6 *16:17 *202:I 0
+7 *16:17 *206:D 5.3819e-05
+8 *16:17 *206:RN 1.19491e-05
+9 *16:17 *206:CLK 0.000441214
+10 *44:I *16:17 3.67913e-05
+11 *1:5 *16:17 5.42682e-05
+*RES
+1 prog_clk *16:17 14.175 
+2 *16:17 *217:I 15.57 
+3 *16:17 *43:I 4.5 
+*END
+
+*D_NET *19 0.00189148
+*CONN
+*I *205:RN I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *201:ZN O *D gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+*CAP
+1 *205:RN 0.000850239
+2 *201:ZN 0.000850239
+3 *205:RN *202:I 0
+4 *205:RN *209:I 9.55009e-05
+5 gfpga_pad_GPIO_PAD[1] *205:RN 9.55009e-05
+*RES
+1 *201:ZN *205:RN 14.67 
+*END
+
+*D_NET *20 0.00162605
+*CONN
+*I *206:RN I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *202:ZN O *D gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+*CAP
+1 *206:RN 0.000550692
+2 *202:ZN 0.000550692
+3 *206:RN *202:I 0.000239671
+4 *206:RN *206:D 0.000234096
+5 *206:RN *39:22 3.89489e-05
+6 *16:17 *206:RN 1.19491e-05
+*RES
+1 *202:ZN *206:RN 22.68 
+*END
+
+*D_NET *21 0.00068563
+*CONN
+*I *207:RN I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *203:ZN O *D gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+*CAP
+1 *207:RN 0.000341368
+2 *203:ZN 0.000341368
+3 *207:RN *220:I 2.89427e-06
+*RES
+1 *203:ZN *207:RN 11.16 
+*END
+
+*D_NET *22 0.00192575
+*CONN
+*I *208:RN I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *204:ZN O *D gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+*CAP
+1 *208:RN 0.000519196
+2 *204:ZN 0.000519196
+3 *208:RN *221:I 0.000223539
+4 *208:RN *231:I 0.000171984
+5 *208:RN *35:12 0
+6 gfpga_pad_GPIO_PAD[0] *208:RN 0.000491839
+*RES
+1 *204:ZN *208:RN 22.23 
+*END
+
+*D_NET *23 0.00208382
+*CONN
+*I *218:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+*I *219:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+*I *217:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+*CAP
+1 *218:I 0.000102965
+2 *219:I 0.00015849
+3 *217:Z 0
+4 *23:4 0.000261455
+5 *218:I *208:D 3.22122e-05
+6 *218:I *208:CLK 0.000176088
+7 *219:I *208:CLK 0.00104782
+8 *219:I *220:I 0.000151417
+9 *219:I *39:18 0.000153363
+*RES
+1 *217:Z *23:4 4.5 
+2 *23:4 *219:I 7.56 
+3 *23:4 *218:I 5.67 
+*END
+
+*D_NET *24 0.00281958
+*CONN
+*I *206:CLK I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *205:CLK I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *218:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+*CAP
+1 *206:CLK 0.000278095
+2 *205:CLK 0.000304057
+3 *218:Z 0
+4 *24:4 0.000582152
+5 *205:CLK *205:D 0.000824037
+6 gfpga_pad_GPIO_PAD[2] *205:CLK 0.000390026
+7 *16:17 *206:CLK 0.000441214
+*RES
+1 *218:Z *24:4 4.5 
+2 *24:4 *205:CLK 8.28 
+3 *24:4 *206:CLK 6.93 
+*END
+
+*D_NET *25 0.00517024
+*CONN
+*I *208:CLK I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *207:CLK I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *219:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_16
+*CAP
+1 *208:CLK 0.000545397
+2 *207:CLK 0.000488658
+3 *219:Z 0.000264976
+4 *25:8 0.00129903
+5 *207:CLK *207:D 0.000161456
+6 *207:CLK *39:22 0.00071129
+7 *208:CLK *208:D 7.17427e-05
+8 *208:CLK *220:I 9.3226e-06
+9 *25:8 *207:D 0.000133756
+10 *25:8 *39:22 0.000260704
+11 *218:I *208:CLK 0.000176088
+12 *219:I *208:CLK 0.00104782
+*RES
+1 *219:Z *25:8 11.43 
+2 *25:8 *207:CLK 13.32 
+3 *25:8 *208:CLK 14.31 
+*END
+
+*D_NET *26 0.0037291
+*CONN
+*I *221:I I *D gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+*I *205:Q O *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*CAP
+1 *221:I 0.00147558
+2 *205:Q 0.00147558
+3 *221:I *231:I 0.000554392
+4 *221:I *35:12 0
+5 *208:RN *221:I 0.000223539
+*RES
+1 *205:Q *221:I 27.9 
+*END
+
+*D_NET *27 0.00241785
+*CONN
+*I *220:I I *D gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+*I *206:Q O *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*CAP
+1 *220:I 0.00060787
+2 *206:Q 0.00060787
+3 *220:I *203:I 0.000387559
+4 *220:I *207:D 0.000285475
+5 *220:I *39:18 0.000365445
+6 *207:RN *220:I 2.89427e-06
+7 *208:CLK *220:I 9.3226e-06
+8 *219:I *220:I 0.000151417
+*RES
+1 *206:Q *220:I 23.76 
+*END
+
+*D_NET *28 0.00173137
+*CONN
+*I *222:I I *D gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+*I *207:Q O *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*CAP
+1 *222:I 0.000865683
+2 *207:Q 0.000865683
+3 *222:I *39:18 0
+*RES
+1 *207:Q *222:I 23.49 
+*END
+
+*D_NET *29 0.00386617
+*CONN
+*I *205:D I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *223:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *205:D 0.00107205
+2 *223:Z 0.00107205
+3 *205:D *229:I 0.000209061
+4 *205:D *37:10 3.45886e-05
+5 gfpga_pad_GPIO_PAD[2] *205:D 0.000568811
+6 left_width_0_height_0_subtile_2__pin_inpad_0_ *205:D 2.52908e-05
+7 *44:I *205:D 1.56862e-05
+8 *205:CLK *205:D 0.000824037
+9 *223:I *205:D 4.45837e-05
+*RES
+1 *223:Z *205:D 27.72 
+*END
+
+*D_NET *30 0.00146277
+*CONN
+*I *229:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*I *215:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *229:I 0.000378897
+2 *215:Z 0.000378897
+3 *229:I *215:I 3.58729e-05
+4 *229:I *37:10 0.000460038
+5 gfpga_pad_GPIO_PAD[2] *229:I 0
+6 *205:D *229:I 0.000209061
+*RES
+1 *215:Z *229:I 21.69 
+*END
+
+*D_NET *31 0.00113671
+*CONN
+*I *230:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*I *216:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *230:I 0.000147712
+2 *216:Z 0.000147712
+3 *230:I *38:8 0.00014033
+4 gfpga_pad_GPIO_PAD[1] *230:I 0.000642587
+5 left_width_0_height_0_subtile_3__pin_inpad_0_ *230:I 3.22122e-05
+6 *10:9 *230:I 2.6155e-05
+*RES
+1 *216:Z *230:I 11.25 
+*END
+
+*D_NET *32 0.00170133
+*CONN
+*I *207:D I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *220:Z O *D gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+*CAP
+1 *207:D 0.000560322
+2 *220:Z 0.000560322
+3 *207:CLK *207:D 0.000161456
+4 *220:I *207:D 0.000285475
+5 *25:8 *207:D 0.000133756
+*RES
+1 *220:Z *207:D 22.86 
+*END
+
+*D_NET *33 0.00406423
+*CONN
+*I *206:D I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *221:Z O *D gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+*CAP
+1 *206:D 0.00139849
+2 *221:Z 0.00139849
+3 *206:D *208:D 0.000228183
+4 *206:D *232:I 5.79059e-06
+5 *206:D *39:18 0.000500309
+6 gfpga_pad_GPIO_PAD[0] *206:D 1.0415e-05
+7 *206:RN *206:D 0.000234096
+8 *217:I *206:D 0.000234632
+9 *16:17 *206:D 5.3819e-05
+*RES
+1 *221:Z *206:D 29.07 
+*END
+
+*D_NET *34 0.00269928
+*CONN
+*I *208:D I *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*I *222:Z O *D gf180mcu_fd_sc_mcu7t5v0__dlyb_1
+*CAP
+1 *208:D 0.000875768
+2 *222:Z 0.000875768
+3 *208:D *231:I 0
+4 *208:D *232:I 0.000528649
+5 *208:D *35:12 0
+6 *208:D *39:18 8.69525e-05
+7 *206:D *208:D 0.000228183
+8 *208:CLK *208:D 7.17427e-05
+9 *218:I *208:D 3.22122e-05
+*RES
+1 *222:Z *208:D 25.11 
+*END
+
+*D_NET *35 0.00336123
+*CONN
+*I *213:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*I *212:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*I *224:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *213:I 0.000214699
+2 *212:I 0
+3 *224:Z 0.00117686
+4 *35:12 0.00139156
+5 *213:I *232:I 0.000520938
+6 *35:12 *232:I 5.71768e-05
+7 gfpga_pad_GPIO_PAD[0] *35:12 0
+8 *208:D *35:12 0
+9 *208:RN *35:12 0
+10 *221:I *35:12 0
+*RES
+1 *224:Z *35:12 21.24 
+2 *35:12 *212:I 4.5 
+3 *35:12 *213:I 6.75 
+*END
+
+*D_NET *36 0.00196631
+*CONN
+*I *211:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*I *214:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*I *225:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *211:I 0.000217487
+2 *214:I 2.85293e-05
+3 *225:Z 0.000262473
+4 *36:8 0.000508489
+5 *211:I *233:I 0.000106536
+6 *36:8 *233:I 0.000842798
+7 gfpga_pad_GPIO_PAD[1] *211:I 0
+8 gfpga_pad_GPIO_PAD[1] *36:8 0
+*RES
+1 *225:Z *36:8 7.2 
+2 *36:8 *214:I 4.77 
+3 *36:8 *211:I 6.12 
+*END
+
+*D_NET *37 0.00376537
+*CONN
+*I *210:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*I *215:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*I *226:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *210:I 0.000397973
+2 *215:I 2.98398e-05
+3 *226:Z 0.000709283
+4 *37:10 0.0011371
+5 gfpga_pad_GPIO_PAD[3] *210:I 0.000842798
+6 left_width_0_height_0_subtile_2__pin_inpad_0_ *37:10 4.34691e-05
+7 *47:I *37:10 6.97472e-05
+8 *205:D *37:10 3.45886e-05
+9 *226:I *37:10 4.6613e-06
+10 *229:I *215:I 3.58729e-05
+11 *229:I *37:10 0.000460038
+*RES
+1 *226:Z *37:10 14.58 
+2 *37:10 *215:I 9.27 
+3 *37:10 *210:I 12.6 
+*END
+
+*D_NET *38 0.00179482
+*CONN
+*I *209:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*I *216:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*I *227:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *209:I 0.000266395
+2 *216:I 0
+3 *227:Z 0.000350552
+4 *38:8 0.000616947
+5 gfpga_pad_GPIO_PAD[1] *209:I 0.000123069
+6 gfpga_pad_GPIO_PAD[1] *38:8 1.79237e-05
+7 gfpga_pad_GPIO_PAD[2] *209:I 3.09818e-06
+8 gfpga_pad_GPIO_PAD[3] *209:I 0
+9 gfpga_pad_GPIO_PAD[3] *38:8 0
+10 left_width_0_height_0_subtile_3__pin_inpad_0_ *38:8 0.000177559
+11 *205:RN *209:I 9.55009e-05
+12 *230:I *38:8 0.00014033
+13 *14:5 *38:8 3.44834e-06
+*RES
+1 *227:Z *38:8 7.56 
+2 *38:8 *216:I 4.5 
+3 *38:8 *209:I 6.75 
+*END
+
+*D_NET *39 0.00777132
+*CONN
+*I *204:I I *D gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+*I *203:I I *D gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+*I *201:I I *D gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+*I *202:I I *D gf180mcu_fd_sc_mcu7t5v0__clkinv_2
+*I *228:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_2
+*CAP
+1 *204:I 0
+2 *203:I 0.000126513
+3 *201:I 0
+4 *202:I 0.000654707
+5 *228:Z 0.000269421
+6 *39:22 0.000906497
+7 *39:18 0.00139332
+8 *39:8 0.00128444
+9 *39:8 *232:I 0
+10 *39:18 *232:I 0
+11 gfpga_pad_GPIO_PAD[0] *39:8 0
+12 *49:I *39:8 0.000392186
+13 *205:RN *202:I 0
+14 *206:D *39:18 0.000500309
+15 *206:RN *202:I 0.000239671
+16 *206:RN *39:22 3.89489e-05
+17 *207:CLK *39:22 0.00071129
+18 *208:D *39:18 8.69525e-05
+19 *219:I *39:18 0.000153363
+20 *220:I *203:I 0.000387559
+21 *220:I *39:18 0.000365445
+22 *222:I *39:18 0
+23 *16:17 *202:I 0
+24 *25:8 *39:22 0.000260704
+*RES
+1 *228:Z *39:8 11.25 
+2 *39:8 *39:18 13.14 
+3 *39:18 *39:22 7.29 
+4 *39:22 *202:I 13.32 
+5 *39:22 *201:I 9 
+6 *39:18 *203:I 5.67 
+7 *39:8 *204:I 9 
+*END
+
+*D_NET *40 0.00222856
+*CONN
+*I *231:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_3
+*I *208:Q O *D gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+*CAP
+1 *231:I 0.00075109
+2 *208:Q 0.00075109
+3 *208:D *231:I 0
+4 *208:RN *231:I 0.000171984
+5 *221:I *231:I 0.000554392
+*RES
+1 *208:Q *231:I 14.94 
+*END
+
+*D_NET *41 0.00466138
+*CONN
+*I *232:I I *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_3
+*I *213:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *232:I 0.000876519
+2 *213:Z 0.000876519
+3 gfpga_pad_GPIO_PAD[0] *232:I 0.00179579
+4 *206:D *232:I 5.79059e-06
+5 *208:D *232:I 0.000528649
+6 *213:I *232:I 0.000520938
+7 *35:12 *232:I 5.71768e-05
+8 *39:8 *232:I 0
+9 *39:18 *232:I 0
+*RES
+1 *213:Z *232:I 27.27 
+*END
+
+*D_NET *42 0.00290639
+*CONN
+*I *233:I I *D gf180mcu_fd_sc_mcu7t5v0__buf_3
+*I *214:Z O *D gf180mcu_fd_sc_mcu7t5v0__clkbuf_1
+*CAP
+1 *233:I 0.000565186
+2 *214:Z 0.000565186
+3 gfpga_pad_GPIO_PAD[1] *233:I 2.70442e-05
+4 left_width_0_height_0_subtile_1__pin_inpad_0_ *233:I 0.000772904
+5 *211:I *233:I 0.000106536
+6 *225:I *233:I 7.96333e-06
+7 *10:9 *233:I 1.8772e-05
+8 *36:8 *233:I 0.000842798
+*RES
+1 *214:Z *233:I 23.76 
+*END
